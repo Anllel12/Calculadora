@@ -26,7 +26,7 @@ namespace Calculadora
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void botonPulsado(object sender, EventArgs e)
         {
             Button boton = (Button)sender;
             if (label1.Text == "0")
@@ -39,7 +39,7 @@ namespace Calculadora
             }
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void operacionPulsada(object sender, EventArgs e)
         {
             Button boton = (Button)sender;
             operacion = boton.Text;
@@ -47,7 +47,7 @@ namespace Calculadora
             label1.Text = "0";
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void igualPulsado(object sender, EventArgs e)
         {
             double operando2 = Convert.ToDouble(label1.Text);
             double resultado = 0;
